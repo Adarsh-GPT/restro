@@ -2,7 +2,7 @@
 Flask REST API for Restaurant Sentiment Analysis
 ==================================================
 Provides endpoints for sentiment prediction on restaurant reviews.
-Uses trained Naive Bayes model with TF-IDF vectorization.
+Uses trained Linear SVM model with TF-IDF vectorization and probability calibration.
 """
 
 from flask import Flask, request, jsonify
