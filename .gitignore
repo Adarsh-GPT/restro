@@ -1,69 +1,33 @@
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
+*.pyc
+*.pyo
+*.pyd
 *.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-venv/
-ENV/
-env/
-.venv
+dist/
+build/
 
-# Flask
-instance/
-.webassets-cache
-*.db
+# Virtual environments
+env/
+.venv/
+venv/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
-.DS_Store
-
-# Model files (generated during training)
-# Uncomment to track these files if needed
-# sentiment_model.pkl
-# vectorizer.pkl
-
-# Node
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnp
-.pnp.js
-build/
-.eslintcache
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # OS
 Thumbs.db
 .DS_Store
-*.log
 
-# Temporary files
-*.tmp
-.cache/
+# Data and models (optional - use Git LFS for large files)
+data/
+*.pkl
+*.model
+*.h5
+
+# Secrets
+.env
+.env.local
