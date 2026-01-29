@@ -89,8 +89,8 @@ def save_model_and_vectorizer(model, vectorizer, model_path, vectorizer_path):
 
 def main():
     df = load_dataset(DATA_PATH)
-    df_filtered = create_sentiment_labels(df, rating_col='stars')
-    texts, labels = preprocess_dataset(df_filtered, text_col='text')
+    df_filtered = create_sentiment_labels(df, rating_col='Rating')
+    texts, labels = preprocess_dataset(df_filtered, text_col='Review Text')
     X_train, X_test, y_train, y_test = train_test_split(texts, labels, test_size=0.2, random_state=42, stratify=labels)
     vectorizer, model = build_and_train_model(X_train, y_train)
     metrics = evaluate_model(vectorizer, model, X_test, y_test)
